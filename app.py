@@ -342,6 +342,7 @@ h1, h2, h3 {
 </style>
 """, unsafe_allow_html=True)
 
+
 # ─── Utility Functions ───────────────────────────────────────────────────────────
 
 NANOPARTICLE_PROFILES = {
@@ -479,6 +480,7 @@ if "predicted_activity" not in st.session_state:
 if "nanoparticle" not in st.session_state:
     st.session_state.nanoparticle = "Ag"
 
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # HERO BANNER
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -490,6 +492,7 @@ st.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
+
 # ─── Tabs ────────────────────────────────────────────────────────────────────────
 tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🎛️ PREDICTION DASHBOARD",
@@ -498,6 +501,7 @@ tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🔬 3D VISUALIZATION",
     "📖 PROJECT OVERVIEW"
 ])
+
 
 # ════════════════════════════════════════════════════════════════════════════════
 # TAB 1 — PREDICTION DASHBOARD
@@ -678,6 +682,7 @@ with tab1:
             <div class="metric-value" style="color:#ffc800;">{params['fwhm']}<span class="metric-unit">°</span></div>
         </div>""", unsafe_allow_html=True)
 
+
 # ════════════════════════════════════════════════════════════════════════════════
 # TAB 2 — XRD ANALYSIS
 # ════════════════════════════════════════════════════════════════════════════════
@@ -813,6 +818,7 @@ with tab2:
     )
     st.plotly_chart(fig_rad, use_container_width=True)
 
+
 # ════════════════════════════════════════════════════════════════════════════════
 # TAB 3 — EXPLAINABLE AI (SHAP)
 # ════════════════════════════════════════════════════════════════════════════════
@@ -915,6 +921,7 @@ with tab3:
     )
     st.plotly_chart(fig_bee, use_container_width=True)
 
+
 # ════════════════════════════════════════════════════════════════════════════════
 # TAB 4 — 3D VISUALIZATION
 # ════════════════════════════════════════════════════════════════════════════════
@@ -994,6 +1001,7 @@ with tab4:
         bargap=0.3
     )
     st.plotly_chart(fig_bar, use_container_width=True)
+
 
 # ════════════════════════════════════════════════════════════════════════════════
 # TAB 5 — PROJECT OVERVIEW
